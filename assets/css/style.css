@@ -28,12 +28,14 @@
                 background-color: blue;
             }
             p{
-                width: 50px;
                 height: 100px;
                 background-color: yellowgreen;
             }
-            img
-            
+            img{
+                height: 600px;
+                background-color: purple;
+            }
+        
         }
     }
 }
@@ -52,6 +54,7 @@ img{
 
 :root{
     --primary-color: #0061fe;
+    --secondary-color: #b4d0e6;
 }
 
 /*#Region Utilities*/
@@ -70,6 +73,10 @@ img{
 
 .d-flex{
     display: flex;
+}
+
+.flex-direction-column{
+    flex-direction: column;
 }
 
 /*Typography*/
@@ -116,8 +123,36 @@ header{
 /*Main*/
 
 .jumbotron{
+    background-color: aliceblue;
     padding-top: 50px;
+    font-size: 1.3rem;
+    h1{
+        font-size: 6rem;
+        padding-bottom: 4rem;
+    }
+    a{
+        background-color: var(--primary-color);
+        padding: 0.5rem;
+        margin: 2rem 0;
+        
+    }
+    .arrow{
+        font-size: 2rem;
+        position: relative;
+        top: 6rem;
+    }
     img{
-        width: 50%;
+        max-width: 100%;
+        margin-bottom: -6rem;
+    }
+    .row{
+        justify-content: space-between;
+    }
+    .col-text{
+        width: 35%;
+        align-items: flex-start;
+    }
+    .col-img{
+        width: 65%;
     }
 }
