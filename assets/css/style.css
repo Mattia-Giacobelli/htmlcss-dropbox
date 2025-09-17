@@ -1,0 +1,85 @@
+/*#Region Debug*/
+
+.debug{
+
+    header{
+        background-color: blueviolet;
+        img{
+            background-color: aqua;
+        }
+        nav{
+            background-color: blue;
+        }
+        div{
+            background-color: greenyellow;
+        }
+        li{
+            background-color: rebeccapurple;
+        }
+    }
+}
+
+/*# Region Common*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+:root{
+    --primary-color: #0061fe;
+}
+
+/*#Region Utilities*/
+
+/*Flex*/
+
+.d-flex{
+    display: flex;
+}
+
+/*Typography*/
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Header*/
+
+header{
+    padding: 1rem 0.5rem;
+    align-items: center;
+    img{
+        padding-right: 1rem;
+    }
+    nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    ul{
+        justify-content: space-between;
+        align-items: baseline;
+        
+    }
+    li{
+        padding: 0.2rem 1rem;
+    }
+    .get-started{
+        background-color: var(--primary-color);
+        padding: 0.2rem 0.5rem;
+    }
+}
