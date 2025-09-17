@@ -147,6 +147,10 @@ ul{
     list-style: ;
 }
 
+.text-center{
+    text-align: center;
+}
+
 /*Header*/
 
 header {
@@ -184,6 +188,7 @@ header {
     background-color: var(--primary-color);
     padding: 0.5rem;
     margin: 2rem 0;
+    color: white;
 
 }
 
@@ -256,6 +261,14 @@ header {
 
     .col-full {
         width: 100%;
+        border: 1px solid var(--sub-secondary-color);
+        flex-direction: column;
+
+        .sub-type {
+            border-bottom: 1px solid var(--sub-secondary-color);
+            width: 100%;
+            text-align: center;
+            padding: 0.5rem 0;
     }
 }
 
@@ -263,7 +276,32 @@ header {
     padding: 2rem 1.5rem;
     flex-direction: column;
     gap: 1rem;
+    font-size: 1.2rem;
 }
+
+.team-enterprise{
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+.enterprise{
+    width: 50%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact{
+    width: 25%;
+    justify-content: center;
+    align-items: flex-start;
+    a{
+        width: 100%;
+    
+    }
+}
+
+
 
 .divide{
     padding-bottom: 2rem;
@@ -276,6 +314,10 @@ header {
 
 .key-points-style{
     li{
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
+}
+
+.user-10{
+    margin-top: 2.35rem;
 }
