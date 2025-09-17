@@ -1,87 +1,132 @@
 /*#Region Debug*/
 
-.debug{
+.debug {
 
-    header{
+    header {
         background-color: blueviolet;
-        img{
+
+        img {
             background-color: aqua;
         }
-        nav{
+
+        nav {
             background-color: blue;
         }
-        div{
+
+        div {
             background-color: greenyellow;
         }
-        li{
+
+        li {
             background-color: rebeccapurple;
         }
     }
 
-    main{
+    main {
         background-color: chartreuse;
-        .jumbotron{
+
+        .jumbotron {
             height: 500px;
             background-color: aquamarine;
-            h1{
+
+            h1 {
                 height: 100px;
                 background-color: blue;
             }
-            p{
+
+            p {
                 height: 100px;
                 background-color: yellowgreen;
             }
-            img{
-                height: 600px;
+
+            img {
+                height: 400px;
                 background-color: purple;
             }
-        
+
+        }
+
+        .buisness-plan {
+            div {
+                background-color: cyan;
+
+                .monthly,
+                .annual {
+                    background-color: crimson;
+                }
+            }
+
+            h2 {
+                height: 75px;
+                background-color: coral;
+            }
+
+            input {
+                background-color: darkgoldenrod;
+                height: 25px;
+            }
+
+            .row {
+                background-color: gold;
+                height: 500px;
+            }
+
+            .col {
+                height: 340px;
+                background-color: darkred;
+                border: 1px solid black;
+            }
+
+            .col-full {
+                height: 150px;
+            }
         }
     }
 }
 
 /*# Region Common*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-:root{
+:root {
     --primary-color: #0061fe;
     --secondary-color: #b4d0e6;
+    --sub-secondary-color: lightgray;
 }
 
 /*#Region Utilities*/
 
-.container-big{
+.container-big {
     margin: 0 auto;
     width: 70%;
 }
 
-.container-small{
+.container-small {
     margin: 0 auto;
     width: 60%;
 }
 
 /*Flex*/
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.flex-direction-column{
+.flex-direction-column {
     flex-direction: column;
 }
 
 /*Typography*/
 
-body{
+body {
     font-family: "Roboto", sans-serif;
 }
 
@@ -89,32 +134,45 @@ ul{
     list-style: none;
 }
 
-a{
+.remove-decoration{
     text-decoration: none;
     color: black;
 }
 
+.text-light {
+    color: var(--sub-secondary-color);
+}
+
+.key-points-style{
+    list-style: ;
+}
+
 /*Header*/
 
-header{
+header {
     padding: 1rem 0.5rem;
     align-items: center;
-    img{
+
+    img {
         padding-right: 1rem;
     }
-    nav{
+
+    nav {
         width: 100%;
         justify-content: space-between;
     }
-    ul{
+
+    ul {
         justify-content: space-between;
         align-items: baseline;
-        
+
     }
-    li{
+
+    li {
         padding: 0.2rem 1rem;
     }
-    .get-started{
+
+    .get-started {
         background-color: var(--primary-color);
         padding: 0.2rem 0.5rem;
     }
@@ -122,37 +180,102 @@ header{
 
 /*Main*/
 
-.jumbotron{
-    background-color: aliceblue;
+.free-trial {
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    margin: 2rem 0;
+
+}
+
+.jumbotron {
+    background-color: var(--secondary-color);
     padding-top: 50px;
+    margin-bottom: 6rem;
     font-size: 1.3rem;
-    h1{
+
+    h1 {
         font-size: 6rem;
         padding-bottom: 4rem;
     }
-    a{
-        background-color: var(--primary-color);
-        padding: 0.5rem;
-        margin: 2rem 0;
-        
-    }
-    .arrow{
+
+    .arrow {
         font-size: 2rem;
         position: relative;
         top: 6rem;
     }
-    img{
+
+    img {
         max-width: 100%;
         margin-bottom: -6rem;
     }
-    .row{
+
+    .row {
         justify-content: space-between;
     }
-    .col-text{
+
+    .col-text {
         width: 35%;
         align-items: flex-start;
     }
-    .col-img{
+
+    .col-img {
         width: 65%;
+    }
+}
+
+.buisness-plan {
+    margin-top: 10rem;
+
+    h2 {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .monthly {
+        padding-right: 3rem;
+    }
+
+    .row {
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .col {
+        width: 30%;
+        border: 1px solid var(--sub-secondary-color);
+        flex-direction: column;
+
+        .sub-type {
+            border-bottom: 1px solid var(--sub-secondary-color);
+            width: 100%;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+    }
+
+    .col-full {
+        width: 100%;
+    }
+}
+
+.sub-description,.key-points{
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.divide{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--sub-secondary-color);
+}
+
+.buy-now{
+    color: var(--primary-color);
+}
+
+.key-points-style{
+    li{
+        padding: 2rem 0;
     }
 }

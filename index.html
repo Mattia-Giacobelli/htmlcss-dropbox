@@ -19,25 +19,25 @@
     <title>Dropbox Layout</title>
 </head>
 
-<body class="deug">
+<body class="debu">
 
     <header class="d-flex">
         <img src="./assets/img/logo-small.png" alt="Logo">
         <nav class="d-flex">
             <div class="menu-left">
-                <ul class="d-flex">
+                <ul class="d-flex list-style-none">
                     <li>
-                        <a href="">
+                        <a class="remove-decoration" href="">
                             Perchè Dropbox
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a class="remove-decoration" href="">
                             Funzioni
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a class="remove-decoration" href="">
                             piani e prezzi
                         </a>
                     </li>
@@ -46,24 +46,24 @@
             </div>
 
             <div class="menu-right">
-                <ul class="d-flex">
+                <ul class="d-flex list-style-none">
                     <li>
-                        <a href="">
+                        <a class="remove-decoration" href="">
                             Supporto
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a class="remove-decoration" href="">
                             Contatta l'ufficio vendite
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a class="remove-decoration" href="">
                             Accedi
                         </a>
                     </li>
                     <li class="get-started">
-                        <a href="">
+                        <a class="remove-decoration" href="">
                             Inizia
                         </a>
                     </li>
@@ -73,6 +73,7 @@
     </header>
 
     <main>
+
         <div class="jumbotron">
             <div class="container-big">
                 <h1>
@@ -88,7 +89,7 @@
                             di ottimizzare il flusso dl lavoro
                             esistente.
                         </p>
-                        <a href="">
+                        <a class="free-trial remove-decoration" href="">
                             Inizia la tua prova gratuita
                         </a>
                         <span>
@@ -105,6 +106,88 @@
             </div>
 
         </div>
+
+        <section class="container-small buisness-plan">
+            <div>
+                <h2>
+                    Trova il piano buisness che fa per te
+                </h2>
+
+                <span class="monthly">
+                    <input type="radio" name="fatturazione" value="mensile">
+                    <label for="mensile">Fatturazione mensile</label>
+                </span>
+                <span class="annual">
+                    <input type="radio" name="fatturazione" value="annuale">
+                    <label for="annuale">Fatturazione annuale</label>
+                </span>
+            </div>
+            <div class="row">
+                <div class="col d-flex">
+                    <div class="sub-type">
+                        <i class="fa-solid fa-user"></i>
+                        Singolo
+                    </div>
+
+                    <div class="sub-description d-flex">
+                        <h3>
+                            Professional
+                        </h3>
+                        <strong>
+                            12&euro;
+                        </strong>
+                        <span class="text-light">
+                            /mese
+                        </span>
+
+                        <span class="user">
+                            <i class="fa-solid fa-user"></i>
+                            1 Utente
+                        </span>
+                        <span class="storage">
+                            <i class="fa-solid fa-folder"></i>
+                            5TB di spazio di archiviazione sicuro
+                        </span>
+                        <span class="share">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            Funzioni di produttività premium
+                            e condivisione file sempllce e
+                            sscura
+                        </span>
+
+                        <a class="free-trial remove-decoration" href="">
+                            Prova gratis per 30 giorni
+                        </a>
+                        <div>
+                            <span class="divide">
+                                oppure
+                            </span>
+                            <a class="buy-now" href=""> acquista ora</a>
+                        </div>
+                    </div>
+
+                    <div class="key-points d-flex">
+                        <h4>
+                            Punti salienti del piano
+                        </h4>
+                        <ul class="key-points-style">
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #0261fe;"></i>
+                                Invia file fino a 100GB conDropbox Transfert
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #0261fe;"></i>
+                                Cartelle offline su dispositivi mobili
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-full d-flex">
+
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
