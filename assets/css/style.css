@@ -111,6 +111,24 @@
             }
         }
     }
+
+    footer{
+        .footer-menu{
+            background-color: salmon;
+            height: 300px;
+        }
+        .row{
+            background-color: forestgreen;
+            height: 200px;
+        }
+        .col-20{
+            background-color: darkmagenta;
+            height: 100%;
+        }
+        .language{
+            background-color: lawngreen;
+        }
+    }
 }
 
 /*# Region Common*/
@@ -129,6 +147,7 @@ img {
     --primary-color: #0061fe;
     --secondary-color: #b4d0e6;
     --sub-secondary-color: lightgray;
+    --footer-bcg: #000000;
 }
 
 /*#Region Utilities*/
@@ -377,7 +396,8 @@ header {
 }
 
 .dropbox-buisness{
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
+    font-size: 1.4rem;
     .row{
         justify-content: space-between;
     }
@@ -385,5 +405,34 @@ header {
     .col-30{
         width: 30%;
         margin: 3rem 0;
+    }
+}
+
+.buisness-users{
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    font-size: 2rem;
+    h2{
+        margin-bottom: 4rem;
+    }
+    a{
+        color: var(--primary-color);
+    }
+}
+
+/*Footer*/
+
+footer{
+    color: white;
+    .row{
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    background-color: var(--footer-bcg);
+    .col-20{
+        width: 18%;
+    }
+    .language{
+        padding: 2rem 0;
     }
 }
