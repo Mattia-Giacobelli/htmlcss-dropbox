@@ -81,6 +81,23 @@
                 height: 150px;
             }
         }
+
+        .partner {
+            div {
+                height: 500px;
+                background-color: darkmagenta;
+            }
+
+            .col-60 {
+                height: 400px;
+                background-color: saddlebrown;
+            }
+
+            .col-40 {
+                height: 400px;
+                background-color: sandybrown;
+            }
+        }
     }
 }
 
@@ -130,11 +147,11 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.remove-decoration{
+.remove-decoration {
     text-decoration: none;
     color: black;
 }
@@ -143,11 +160,7 @@ ul{
     color: var(--sub-secondary-color);
 }
 
-.key-points-style{
-    list-style: ;
-}
-
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -230,6 +243,7 @@ header {
 
 .buisness-plan {
     margin-top: 10rem;
+    margin-bottom: 15rem;
 
     h2 {
         font-size: 3rem;
@@ -269,55 +283,82 @@ header {
             width: 100%;
             text-align: center;
             padding: 0.5rem 0;
+        }
     }
 }
 
-.sub-description,.key-points{
+.sub-description,
+.key-points {
     padding: 2rem 1.5rem;
     flex-direction: column;
     gap: 1rem;
     font-size: 1.2rem;
 }
 
-.team-enterprise{
+.team-enterprise {
     justify-content: space-between;
     padding: 2rem 1.5rem;
     font-size: 1.2rem;
 }
 
-.enterprise{
+.enterprise {
     width: 50%;
     flex-direction: column;
     gap: 1rem;
 }
 
-.contact{
+.contact {
     width: 25%;
     justify-content: center;
     align-items: flex-start;
-    a{
+
+    a {
         width: 100%;
-    
     }
 }
 
-
-
-.divide{
+.divide {
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--sub-secondary-color);
 }
 
-.buy-now{
+.buy-now {
     color: var(--primary-color);
 }
 
-.key-points-style{
-    li{
+.key-points-style {
+    li {
         padding: 1rem 0;
     }
 }
 
-.user-10{
+.user-10 {
     margin-top: 2.35rem;
+}
+
+.partner {
+    font-size: 1.2rem;
+    .row {
+        justify-content: space-between;
+    }
+
+    .col-60 {
+        width: 55%;
+    }
+
+    .col-40 {
+        width: 40%;
+        padding-top: 2rem;
+        h3{
+            padding-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        p{
+            padding-bottom: 2rem;
+        }
+        .partner-bt{
+            padding: 0.5rem;
+            border: 1px solid black;
+        }
+    }
 }
