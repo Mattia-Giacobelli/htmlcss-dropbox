@@ -377,6 +377,7 @@ header {
 }
 
 .dropbox-buisness{
+    margin-bottom: 10rem;
     .row{
         justify-content: space-between;
     }
