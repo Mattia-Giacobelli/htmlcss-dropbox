@@ -4,26 +4,26 @@
 
     header {
         background-color: blueviolet;
-        min-min-height: 400px;
+        min-height: 400px;
 
         img {
             background-color: aqua;
-            min-min-height: 250px;
+            min-height: 250px;
         }
 
         nav {
             background-color: blue;
-            min-min-height: 300px;
+            min-height: 300px;
         }
 
         div {
             background-color: greenyellow;
-            min-min-height: 300px;
+            min-height: 300px;
         }
 
         li {
             background-color: rebeccapurple;
-            min-min-height: 50px;
+            min-height: 50px;
         }
     }
 
@@ -225,7 +225,7 @@ img {
 /*Typography*/
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 ul {
