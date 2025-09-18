@@ -247,7 +247,7 @@ ul {
 
 /*Header Region*/
 
-header {
+.header-menu {
     padding: 0 0.5rem;
     align-items: center;
     position: fixed;
@@ -271,7 +271,8 @@ header {
 
     li {
         padding: 1.5rem 1rem;
-        &:hover{
+
+        &:hover {
             border-bottom: 2px solid var(--primary-color);
         }
     }
@@ -282,17 +283,37 @@ header {
     }
 }
 
-.get-started:hover{
+.get-started:hover {
     background-color: rgb(9, 149, 243);
+}
+
+#piani {
+    flex-direction: column;
+    position: relative;
+
+
+    &:hover {
+        .solutions {
+            display: inline-block;
+        }
+    }
+}
+
+.solutions {
+    background-color: white;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 4.5rem;
 }
 
 /*Main Region*/
 
-.free-trial:hover{
+.free-trial:hover {
     background-color: rgb(9, 149, 243);
 }
 
-.partner-bt:hover{
+.partner-bt:hover {
     font-weight: 300;
 }
 
@@ -502,11 +523,11 @@ footer {
 /*Language*/
 
 .language {
-        padding: 2rem 0;
+    padding: 2rem 0;
 
-        a {
-            color: var(--secondary-color);
-            border-top: 1px solid var(--secondary-color);
-            padding: 2rem 0;
-        }
+    a {
+        color: var(--secondary-color);
+        border-top: 1px solid var(--secondary-color);
+        padding: 2rem 0;
     }
+}
