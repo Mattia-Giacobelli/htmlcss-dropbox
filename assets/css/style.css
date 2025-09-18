@@ -248,8 +248,11 @@ ul {
 /*Header*/
 
 header {
-    padding: 1rem 0.5rem;
+    padding: 0 0.5rem;
     align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
 
     img {
         padding-right: 1rem;
@@ -267,13 +270,20 @@ header {
     }
 
     li {
-        padding: 0.2rem 1rem;
+        padding: 1.5rem 1rem;
+        &:hover{
+            border-bottom: 2px solid var(--primary-color);
+        }
     }
 
     .get-started {
         background-color: var(--primary-color);
         padding: 0.2rem 0.5rem;
     }
+}
+
+.get-started:hover{
+    background-color: rgb(9, 149, 243);
 }
 
 /*Main*/
@@ -288,7 +298,7 @@ header {
 
 .jumbotron {
     background-color: var(--secondary-color);
-    padding-top: 50px;
+    padding-top: 5rem;
     margin-bottom: 6rem;
     font-size: 1.3rem;
 
@@ -300,7 +310,7 @@ header {
     .arrow {
         font-size: 2rem;
         position: relative;
-        top: 6rem;
+        top: 3rem;
     }
 
     img {
@@ -322,7 +332,7 @@ header {
     }
 }
 
-.buisness-plan {
+#buisness-plan {
     margin-top: 10rem;
     margin-bottom: 15rem;
 
@@ -351,15 +361,12 @@ header {
     }
 }
 
-
-
 .sub-type {
     border-bottom: 1px solid var(--sub-secondary-color);
     width: 100%;
     text-align: center;
     padding: 0.5rem 0;
 }
-
 
 .sub-description,
 .key-points {
@@ -457,6 +464,14 @@ header {
     a {
         color: var(--primary-color);
     }
+}
+
+.free-trial:hover{
+    background-color: rgb(9, 149, 243);
+}
+
+.partner-bt:hover{
+    font-weight: 300;
 }
 
 /*Footer*/
